@@ -1,34 +1,24 @@
-# Cybersecurity-Lab-Journal
+# Cybersecurity Home Lab Project #1
+## Safe Environment Setup for Cybersecurity Testing
 
-Cybersecurity lab journal with Linux, Splunk, Hydra, SSH, threat detection, and Blue Team exercises.
+### 1. Purpose
+To create a secure, isolated environment where cybersecurity tools and simulations can be run without risk to production systems.  
 
-# 🔍 SSH Brute Force Detection Lab
+### 2. Tools Used
+- VirtualBox (virtualization platform)  
+- Kali Linux ISO (penetration testing OS, for simulation only)  
 
-### 📅 Date
-August 6, 2025
+### 3. Procedure
+1. Downloaded & installed VirtualBox.  
+2. Configured VM settings to mimic a lightweight endpoint.  
+3. Installed Kali Linux.  
+4. Validated isolation (no impact to host system).  
+5. Created baseline snapshots for rollback.  
 
-### 🧠 Objective
-Simulate an SSH brute-force attack using Hydra and monitor authentication attempts via system logs and Splunk.
+### 4. Outcome
+- Established a repeatable environment for safe testing.  
+- Practiced foundational skills in virtualization, networking, and recovery.  
 
-### 🛠️ Tools Used
-- Kali Linux
-- OpenSSH
-- Hydra
-- Splunk
-- /var/log/auth.log
-
-### 🧪 What I Did
-- Enabled and configured SSH service.
-- Ran Hydra brute-force attack on 127.0.0.1.
-- Monitored logs and authentication failures.
-- Troubleshooted Splunk data ingestion issues and verified system permissions.
-
-### 📚 Key Takeaways
-- Learned to parse auth.log for brute-force patterns.
-- Identified the need for system log permissions when configuring Splunk.
-- Discovered issues related to pam_winbind errors and authentication retry limits.
-
-### 🚀 Next Steps
-- Enable real-time alerting in Splunk.
-- Expand to detect FTP or web login brute-force attempts.
-- Automate log parsing with Python.
+### 5. Lessons Learned
+- Snapshots = critical for experimentation.  
+- SOC teams rely on isolated labs for safe simulations.  
