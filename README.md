@@ -1,4 +1,4 @@
-# Cybersecurity Home Lab Project #1
+# Cybersecurity Home Lab #1
 ## Safe Environment Setup for Cybersecurity Testing
 
 ### 1. Purpose
